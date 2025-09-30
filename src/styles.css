@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Put animations inside @layer keyframes */
+@layer keyframes {
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Then put custom utilities inside @layer utilities */
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 50s linear infinite;
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }
+}

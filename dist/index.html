@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moniepoint</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+  <link rel="stylesheet" crossorigin href="/assets/index-CHyDbtLF.css">
+</head>
+<body>
+    
+    <header class="sticky top-0 z-50">
+        <!-- Top Banner -->
+        <div class="bg-[#030B1D] w-full">
+            <div class="max-w-[800px] w-full mx-auto flex flex-col sm:flex-row justify-between items-center text-white py-2 sm:py-4 px-4 gap-2 sm:gap-4">
+                <p class="text-xs sm:text-sm text-center sm:text-left">This website uses cookies to enhance your experience. Learn more here:</p>
+                <div class="flex gap-[30px] text- sm:text-sm">
+                    <p class="font-bold cursor-pointer hover:text-blue-300 transition-colors">Privacy Policy</p>
+                    <p class="font-bold cursor-pointer hover:text-blue-300 transition-colors">Cookie Policy</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden max-lg:grid grid-cols-2 text-white text-center text-sm">
+            <div class="bg-[#092256] p-5">Business</div>
+            <div class="bg-[#031335] p-5 ">Personal</div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="bg-[#031335] w-full max-lg:hidden">
+            <div class="py-4 sm:py-6 px-4 sm:px-5 flex justify-between items-center max-w-[1400px] w-full mx-auto">
+                
+                
+                <!-- Left Section: Logo + Business/Personal Buttons -->
+                <div class="flex gap-4 sm:gap-5 items-center text-white">
+                    <div class="logo">
+                        <img class="w-24 sm:w-32" src="/assets/logo-mfb-white-BXG_ELec.png" alt="moniepoint logo">
+                    </div>
+                    
+                    <!-- Business/Personal Toggle - Hidden on mobile -->
+                    <div class="hidden md:flex gap-2">
+                        <button class="bg-[#35425D] rounded-3xl px-3 sm:px-4 font-medium py-2 text-sm transition-colors hover:bg-[#4a5a7a]">
+                            Business
+                        </button>
+                        <button class="rounded-3xl px-3 sm:px-4 font-medium py-2 text-sm hover:bg-[#35425D] transition-colors">
+                            Personal
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center ">
+                                  <!-- Desktop Navigation -->
+                <nav class="hidden lg:block pr-[60px]">
+                    <ul class="navlinks flex gap-6 xl:gap-8 text-white">
+                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Products</a>
+                            <i class="fas fa-angle-down text-xs"></i>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Company</a>
+                            <i class="fas fa-angle-down text-xs"></i>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">About</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Contact</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Right Section -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <!-- Sign in Button -->
+                    <button class="whitespace-nowrap bg-[#C4E9FD] text-[#25406F] text-[15px] relative px-[12px] pr-[29px] py-[8px] rounded-[30px]">Sign in<i class="text-[#25406F] pl-[3px] translate-y-[53%] absolute bottom-[50%] fas fa-arrow-right"></i></button>
+
+                    <!-- Country Selector -->
+                    <div class="hidden sm:flex items-center gap-2 text-white cursor-pointer hover:text-blue-300 transition-colors">
+                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2214_22084)'%3e%3cpath%20d='M12%2024C18.6274%2024%2024%2018.6274%2024%2012C24%205.37258%2018.6274%200%2012%200C5.37258%200%200%205.37258%200%2012C0%2018.6274%205.37258%2024%2012%2024Z'%20fill='white'/%3e%3cpath%20d='M0%2011.9997C0%2017.1593%203.2565%2021.5577%207.82611%2023.2533V0.746094C3.2565%202.44156%200%206.84012%200%2011.9997Z'%20fill='%2318B757'/%3e%3cpath%20d='M23.9999%2011.9997C23.9999%206.84012%2020.7434%202.44156%2016.1738%200.746094V23.2533C20.7434%2021.5577%2023.9999%2017.1593%2023.9999%2011.9997Z'%20fill='%2318B757'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2214_22084'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="" class="w-5 h-5">
+                        <i class="fas fa-angle-down text-xs"></i>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+                </div>
+  
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+         <div class="bg-[#031335] w-full lg:hidden ">
+            <div class="py-4 sm:py-6 px-4 sm:px-5 flex justify-between items-center max-w-7xl mx-auto">
+                
+                
+                
+                <div class="flex gap-4 sm:gap-5 items-center text-white">
+                    <div class="logo">
+                        <img class="w-24 sm:w-32" src="/assets/logo-mfb-white-BXG_ELec.png" alt="moniepoint logo">
+                    </div>
+                    
+                   
+                </div>
+
+                
+
+            
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="text-white border-gray-500 border-[0.5px] rounded-full w-[35px] h-[35px] relative">
+                        <i class="fas  absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="hero-section bg-[#031335]  text-white px-[17px] pb-[30px]
+    
+    relative after:content-[''] after:absolute after:-bottom-[60px] after:left-0 after:w-full after:h-[60px] after:bg-[#031335] after:rounded-[0_0_50%_50%/0_0_90%_90%] after:z-[1]
+    
+    ">
+    
+        <div class="max-w-[1400px] w-full mx-auto flex justify-between items-center py-[10px] ">
+
+           <div class="text-section flex flex-col w-[50%] gap-[25px] max-lg:gap-[18px] items-start shrink-0">
+               <button class="bg-[#3E588E] px-[18px] max-lg:px-[12px] py-[12px] rounded-[35px] flex whitespace-nowrap items-center"><img class="w-[30px] max-lg:w-[20px] pr-[5px]" src="/assets/config-CdaO9Yoc.png" alt=""><span class="max-[1200px]:text-[10px]">Africa's fastest growing financial Institution 2023-2025</span></button>
+               <div>
+                    <h3 class=" text-[50px] max-lg:text-[35px] font-bold text-[#FEFEFE] " >Simple solutions to</h3>
+                    <h3 class="text-[50px] max-lg:text-[35px] font-bold text-[#C4E9FD] -translate-y-1.5" >Power your business</h3>
+               </div>
+               
+            
+            <p class="text-[20px] max-lg:text-[16px] text-[#C3C9D5]">Collect payments, access loans and manage operations with a business banking solution that meets all your needs.</p>
+           
+            <button class="bg-[#0F58DC] px-[25px] py-[15px] rounded-xl flex items-center gap-[10px]"><span>Open an Account</span><i class=" fas fa-arrow-right"></i></button>
+            <div>
+                <p class="text-[12px]">we are licensed by <span><img class="w-[20px] inline-block" src="/assets/fd-B1cPFsiX.png" alt=""></span> and insured by
+                <img class="w-[70px] inline-block" src="/assets/457367134_1015365493418137_1270712666882087132_n-BIWXLygJ.png" alt=""></p>
+            </div>
+
+        </div>
+        <div class="img-section grow ">
+            <img class="w-full bg" src="/assets/hero-sub-DHDQ-su7.png" alt="">
+        </div>
+        
+    </div>
+    </div>
+    <div class="bg-[#F1F5FA] w-full ">
+        <div class="max-w-[1400px] py-[40px] mb-[40px] w-full mx-auto bg-white rounded-[25px] bottom-[30px] z-10 relative ">
+        <div class="flex justify-between items-center px-[50px]">
+            <div class=" flex w-[50%] items-start gap-[50px]">
+            <p class="text-[32px] text-[#092256] font-[700]">
+                Businesses that Count On Us
+            </p>
+            <p class="text-[16px] text-[#3C5589]">
+                  join <span class="text-[#0356EC] fomt">5 million</span> business owners on the moniepoint platform 
+            </p>
+        </div>
+        <div>  
+            <p style="-webkit-text-stroke: 1px #2B71F1;" class=" text-transparent font-bold"><span class="text-[150px] relative left-[35px]">5</span><span class="text-[150px] relative left-[21px]">m</span ><span class="text-[150px] relative bottom-[8px]">+</span></p>
+            
+        </div>
+        </div>
+        <div class="carousel w-full overflow-x-auto  scrollbar-none flex">
+             <div class="slides flex gap-[20px] animate-scroll items-center pr-[20px]">
+            <div class="card w-[200px] h-[200px] border shrink-0">
+                <img class="" src="/assets/biz-1-GWyCIZ36.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border rounded-md">
+                <img src="/assets/biz-2-BlsGyGIt.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-3-DhaF8ggv.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-5-DseYF_eK.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-6-BeNrt87Q.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-7-B1ghaKnl.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-8-CxsorDb_.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-1-GWyCIZ36.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-2-BlsGyGIt.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink- border">
+                <img src="/assets/biz-3-DhaF8ggv.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-5-DseYF_eK.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-6-BeNrt87Q.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-7-B1ghaKnl.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px]  shrink-0 border">
+                <img src="/assets/biz-8-CxsorDb_.png" alt="">
+            </div>
+           
+           
+           
+
+        </div>
+             <div class="slides flex gap-[10px] animate-scroll items-center">
+            <div class="card w-[200px] h-[200px] border shrink-0">
+                <img class="" src="/assets/biz-1-GWyCIZ36.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-2-BlsGyGIt.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-3-DhaF8ggv.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-5-DseYF_eK.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-6-BeNrt87Q.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-7-B1ghaKnl.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-8-CxsorDb_.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-1-GWyCIZ36.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-2-BlsGyGIt.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink- border">
+                <img src="/assets/biz-3-DhaF8ggv.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-5-DseYF_eK.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-6-BeNrt87Q.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="/assets/biz-7-B1ghaKnl.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px]  shrink-0 border">
+                <img src="/assets/biz-8-CxsorDb_.png" alt="">
+            </div>
+           
+           
+           
+
+        </div>
+        </div>
+        
+       
+        
+    </div>
+    
+    <div class="w-full">
+            <h2 class="text-center text-[40px] w-full mx-auto max-w-[700px] font-[700] text-[#193162]">All the tools you need to run your business with ease</h2>
+            <div class="w-full mx-auto max-w-[900px] bg-white my-[20px] py-[30px] flex justify-around text-[18px] mb-[px] rounded-[35px] sticky top-[150px] z-[9">
+                <button class="bg-[#C4E9FD] px-[10px] py-[8px] text-[#37547F] rounded-[20px]">Business Account</button>
+                <button class="text-[#8391AF]">Point of Sale Terminal</button>
+                <button class="text-[#8391AF]">Expense Card</button>
+                <button class="text-[#8391AF]">Working Capital loans</button>
+
+            </div>
+
+    
+    <!-- <div class="flex justify-between items-center max-w-[1400px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] max-lg:flex-col"> -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-start  max-w-[1440px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] ">
+        <div class="text max-w-[500px] ml-[40px]">
+            <span class=" bg-[#ECF2FE]  text-[#022C77] border-[3px] border-[#C4E9FD] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Business Account</span>
+            <h3 class="text-[40px] font-[400] leading-[50px]">A free bank account to power your business</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px]">Open a free bank account in your business name, in minutes. Access round the clock support, with no hidden fees and complete control over your account.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] px-5 p-4 text-white">Open an account</button>
+                <a href="" class="text-[#2168E3]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="/assets/tool1-BnevT_3M.png" alt="">
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-start  max-w-[1440px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] ">
+        <div class="text max-w-[500px] ml-[40px]">
+            <span class=" bg-[#ECF2FE]  text-[#022C77] border-[3px] border-[#C4E9FD] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Point of Sale Terminal</span>
+            <h3 class="text-[40px] font-[400] leading-[50px]">POS machine wey no get wahala.</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px]">Accept card and transfer payments seamlessly, with a reliable point-of-sale terminal. Enjoy instant settlement, easy dispute resolution, and instant payments every time.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] px-5 p-4 text-white">Open an account</button>
+                <a href="" class="text-[#2168E3]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="/assets/tool2-BNtIS1nr.png" alt="">
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-start  max-w-[1440px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] ">
+        <div class="text max-w-[500px] ml-[40px]">
+            <span class=" bg-[#ECF2FE]  text-[#022C77] border-[3px] border-[#C4E9FD] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Expense Card</span>
+            <h3 class="text-[40px] font-[400] leading-[50px]">A secure card for your business expenses</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px]">Order an expense card to spend and manage your business finance effectively, and get it in 48hrs. Track your business expenses and set limits for different needs.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] px-5 p-4 text-white">Get a Card</button>
+                <a href="" class="text-[#2168E3]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="/assets/tool3-SsI0XRwM.png" alt="">
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-start  max-w-[1440px] w-full mx-auto mb-[40px] px-[20px] gap-[20px] pb-[150px]">
+        <div class="text max-w-[500px] ml-[40px]">
+            <span class=" bg-[#ECF2FE]  text-[#022C77] border-[3px] border-[#C4E9FD] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Working Capital Loans</span>
+            <h3 class="text-[40px] font-[400] leading-[50px]">Flexible loans that help your business grow</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px]">Access working capital loans to help your business grow. Easy request process with business-friendly interest rates and repayment tenures.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] px-5 p-4 text-white">Open an account</button>
+                <a href="" class="text-[#2168E3]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="/assets/tool4-i-tbMWpg.png" alt="">
+        </div>
+    </div>
+
+
+    </div>
+    
+
+    </div>
+    <div class="testimonilas">
+        hello world
+    </div>
+    <div class="bg-[#F8FAFD] w-full">
+        <div class="grid grid-cols-2 sm:grid-cols-3 max-w-[1400px] w-full mx-auto px-20px" >
+            <p class="text-[#092256] font-[400] text-[24px]  line">whats more</p>
+            <p class="text-[#3E558E] font-[500] text-[24px]">Explore more ways to take your business to the next level</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] max-w-[1400px] w-full mx-auto  py-[50px] px-[20px]">
+            <div class="card p-[30px] bg-white rounded-[20px] ">
+                <img class="w-[84px] mb-[40px]" src="data:image/svg+xml,%3csvg%20width='85'%20height='84'%20viewBox='0%200%2085%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M42.5006%2084H42.1955C22.5637%2083.9486%209.40979%2079.8846%206.676%2077.3782C3.79561%2074.8165%200%2061.5689%200%2042C0%2022.4311%203.79561%209.18355%206.67996%206.6218C9.40979%204.1154%2022.6152%200.0513931%2042.1955%200H42.5006C62.1323%200.0513931%2075.2862%204.1154%2078.02%206.6218C80.9044%209.17959%2084.7%2022.4785%2084.7%2041.996C84.7%2061.5136%2080.9044%2074.8125%2078.02%2077.3703C75.2862%2079.9281%2062.1323%2083.9921%2042.5006%2083.9921V84Z'%20fill='%23FFFAEB'/%3e%3cmask%20id='mask0_2238_18276'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='22'%20y='22'%20width='40'%20height='40'%3e%3crect%20x='22'%20y='22'%20width='40'%20height='40'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_2238_18276)'%3e%3cpath%20d='M28.6666%2057C27.75%2057%2026.9653%2056.6736%2026.3125%2056.0208C25.6597%2055.3681%2025.3333%2054.5833%2025.3333%2053.6667V30.3333C25.3333%2029.4167%2025.6597%2028.6319%2026.3125%2027.9792C26.9653%2027.3264%2027.75%2027%2028.6666%2027H38.6666C39.5833%2027%2040.368%2027.3264%2041.0208%2027.9792C41.6736%2028.6319%2042%2029.4167%2042%2030.3333V33.6667H55.3333C56.25%2033.6667%2057.0347%2033.9931%2057.6875%2034.6458C58.3403%2035.2986%2058.6666%2036.0833%2058.6666%2037V45.3333C58.6666%2045.8056%2058.5069%2046.2014%2058.1875%2046.5208C57.868%2046.8403%2057.4722%2047%2057%2047C56.5278%2047%2056.1319%2046.8403%2055.8125%2046.5208C55.493%2046.2014%2055.3333%2045.8056%2055.3333%2045.3333V37H42V40.3333H45.3333V43.6667H42V47H45.3333V50.3333H42V53.6667H47C47.4722%2053.6667%2047.868%2053.8264%2048.1875%2054.1458C48.5069%2054.4653%2048.6666%2054.8611%2048.6666%2055.3333C48.6666%2055.8056%2048.5069%2056.2014%2048.1875%2056.5208C47.868%2056.8403%2047.4722%2057%2047%2057H28.6666ZM28.6666%2053.6667H32V50.3333H28.6666V53.6667ZM28.6666%2047H32V43.6667H28.6666V47ZM28.6666%2040.3333H32V37H28.6666V40.3333ZM28.6666%2033.6667H32V30.3333H28.6666V33.6667ZM35.3333%2053.6667H38.6666V50.3333H35.3333V53.6667ZM35.3333%2047H38.6666V43.6667H35.3333V47ZM35.3333%2040.3333H38.6666V37H35.3333V40.3333ZM35.3333%2033.6667H38.6666V30.3333H35.3333V33.6667ZM48.6666%2043.6667V40.3333H52V43.6667H48.6666ZM48.6666%2050.3333V47H52V50.3333H48.6666Z'%20fill='%23092256'/%3e%3cpath%20d='M55.8125%2059.8529C56.1319%2060.1723%2056.5277%2060.332%2057%2060.332C57.4722%2060.332%2057.868%2060.1723%2058.1875%2059.8529C58.5069%2059.5334%2058.6666%2059.1376%2058.6666%2058.6654V56.9987H60.3333C60.8055%2056.9987%2061.2014%2056.839%2061.5208%2056.5195C61.8402%2056.2001%2062%2055.8043%2062%2055.332C62%2054.8598%2061.8402%2054.464%2061.5208%2054.1445C61.2014%2053.8251%2060.8055%2053.6654%2060.3333%2053.6654H58.6666V51.9987C58.6666%2051.5265%2058.5069%2051.1306%2058.1875%2050.8112C57.868%2050.4918%2057.4722%2050.332%2057%2050.332C56.5277%2050.332%2056.1319%2050.4918%2055.8125%2050.8112C55.493%2051.1306%2055.3333%2051.5265%2055.3333%2051.9987V53.6654H53.6666C53.1944%2053.6654%2052.7986%2053.8251%2052.4791%2054.1445C52.1597%2054.464%2052%2054.8598%2052%2055.332C52%2055.8043%2052.1597%2056.2001%2052.4791%2056.5195C52.7986%2056.839%2053.1944%2056.9987%2053.6666%2056.9987H55.3333V58.6654C55.3333%2059.1376%2055.493%2059.5334%2055.8125%2059.8529Z'%20fill='%230357EE'/%3e%3c/g%3e%3c/svg%3e" alt="">
+                <h3 class="text-[24px] mb-[16px] text-[#031335] font-[700]">Manage Multiple Businesses</h3>
+                <p class="text-[#3E588E] text-[20px]">Easily handle multiple businesses in one place</p>
+                
+            </div>
+            <div class="card p-[30px] bg-white rounded-[20px] ">
+                <img class="w-[84px] mb-[40px]" src="data:image/svg+xml,%3csvg%20width='85'%20height='84'%20viewBox='0%200%2085%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M42.5002%2084H42.1951C22.5633%2083.9486%209.40942%2079.8846%206.67563%2077.3782C3.79525%2074.8165%20-0.000366211%2061.5689%20-0.000366211%2042C-0.000366211%2022.4311%203.79525%209.18355%206.67959%206.6218C9.40942%204.1154%2022.6148%200.0513931%2042.1951%200H42.5002C62.132%200.0513931%2075.2859%204.1154%2078.0197%206.6218C80.904%209.17959%2084.6996%2022.4785%2084.6996%2041.996C84.6996%2061.5136%2080.904%2074.8125%2078.0197%2077.3703C75.2859%2079.9281%2062.132%2083.9921%2042.5002%2083.9921V84Z'%20fill='%23FFFAEB'/%3e%3cmask%20id='mask0_2238_18288'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='21'%20y='22'%20width='41'%20height='41'%3e%3crect%20x='21.9797'%20y='22.0703'%20width='40'%20height='40'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_2238_18288)'%3e%3cpath%20d='M26.7019%2057.0703C26.3084%2057.0703%2025.9786%2056.9372%2025.7123%2056.671C25.4461%2056.4048%2025.313%2056.0749%2025.313%2055.6814V38.4592C25.313%2038.0657%2025.4461%2037.7358%2025.7123%2037.4696C25.9786%2037.2034%2026.3084%2037.0703%2026.7019%2037.0703H32.8131C33.2066%2037.0703%2033.5364%2037.2034%2033.8026%2037.4696C34.0688%2037.7358%2034.2019%2038.0657%2034.2019%2038.4592V55.6814C34.2019%2056.0749%2034.0688%2056.4048%2033.8026%2056.671C33.5364%2056.9372%2033.2066%2057.0703%2032.8131%2057.0703H26.7019ZM38.9242%2057.0703C38.5306%2057.0703%2038.2008%2056.9372%2037.9346%2056.671C37.6684%2056.4048%2037.5353%2056.0749%2037.5353%2055.6814V28.4592C37.5353%2028.0657%2037.6684%2027.7358%2037.9346%2027.4696C38.2008%2027.2034%2038.5306%2027.0703%2038.9242%2027.0703H45.0353C45.4288%2027.0703%2045.7586%2027.2034%2046.0248%2027.4696C46.2911%2027.7358%2046.4242%2028.0657%2046.4242%2028.4592V55.6814C46.4242%2056.0749%2046.2911%2056.4048%2046.0248%2056.671C45.7586%2056.9372%2045.4288%2057.0703%2045.0353%2057.0703H38.9242Z'%20fill='%23092256'/%3e%3cpath%20d='M50.1568%2056.6697C50.423%2056.9359%2050.7529%2057.069%2051.1464%2057.069H57.2575C57.651%2057.069%2057.9809%2056.9359%2058.2471%2056.6697C58.5133%2056.4035%2058.6464%2056.0736%2058.6464%2055.6801V41.7912C58.6464%2041.3977%2058.5133%2041.0679%2058.2471%2040.8016C57.9809%2040.5354%2057.651%2040.4023%2057.2575%2040.4023H51.1464C50.7529%2040.4023%2050.423%2040.5354%2050.1568%2040.8016C49.8906%2041.0679%2049.7575%2041.3977%2049.7575%2041.7912V55.6801C49.7575%2056.0736%2049.8906%2056.4035%2050.1568%2056.6697Z'%20fill='%230357EE'/%3e%3c/g%3e%3c/svg%3e" alt="">
+               <h3 class="text-[24px] mb-[16px] text-[#031335] font-[700]">Business Performance</h3>
+                <p class="text-[#3E588E] text-[20px]">Keep your finger on the pulse of your business</p>
+                
+            </div>
+            <div class="card p-[30px] bg-white rounded-[20px] ">
+                <img class="w-[84px] mb-[40px] " src="data:image/svg+xml,%3csvg%20width='85'%20height='84'%20viewBox='0%200%2085%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M42.5006%2084H42.1955C22.5637%2083.9486%209.40979%2079.8846%206.676%2077.3782C3.79561%2074.8165%200%2061.5689%200%2042C0%2022.4311%203.79561%209.18355%206.67996%206.6218C9.40979%204.1154%2022.6152%200.0513931%2042.1955%200H42.5006C62.1323%200.0513931%2075.2862%204.1154%2078.02%206.6218C80.9044%209.17959%2084.7%2022.4785%2084.7%2041.996C84.7%2061.5136%2080.9044%2074.8125%2078.02%2077.3703C75.2862%2079.9281%2062.1323%2083.9921%2042.5006%2083.9921V84Z'%20fill='%23FFFAEB'/%3e%3cmask%20id='mask0_2238_18296'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='22'%20y='22'%20width='40'%20height='40'%3e%3crect%20x='22'%20y='22'%20width='40'%20height='40'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_2238_18296)'%3e%3cpath%20d='M46.5834%2035.191C46.5834%2033.897%2046.1622%2032.8657%2045.3198%2032.0972C44.4773%2031.3287%2043.3615%2030.9444%2041.9723%2030.9444C41.1147%2030.9444%2040.3385%2031.1322%2039.6436%2031.5078C38.9488%2031.8833%2038.35%2032.4317%2037.8473%2033.1528C37.4954%2033.662%2037.0209%2033.9699%2036.4237%2034.0764C35.8265%2034.1828%2035.2778%2034.0694%2034.7778%2033.7361C34.2964%2033.412%2034.0117%2033.0139%2033.9237%2032.5417C33.8357%2032.0694%2033.9538%2031.5787%2034.2778%2031.0695C35.1297%2029.7732%2036.2257%2028.7708%2037.5659%2028.0625C38.9061%2027.3542%2040.3749%2027%2041.9723%2027C44.6112%2027%2046.7385%2027.7383%2048.3542%2029.2149C49.9699%2030.6915%2050.7778%2032.6245%2050.7778%2035.0139C50.7778%2036.2824%2050.5047%2037.4444%2049.9584%2038.5C49.4121%2039.5556%2048.4769%2040.7268%2047.1528%2042.0139C46.1251%2042.9861%2045.4306%2043.7543%2045.0695%2044.3186C44.7084%2044.8828%2044.4723%2045.5266%2044.3612%2046.25C44.2686%2046.8611%2044.007%2047.3704%2043.5764%2047.7778C43.1459%2048.1852%2042.6408%2048.3889%2042.0612%2048.3889C41.4816%2048.3889%2040.984%2048.1921%2040.5682%2047.7986C40.1524%2047.4051%2039.9445%2046.9352%2039.9445%2046.3889C39.9445%2045.3982%2040.1899%2044.456%2040.6806%2043.5625C41.1713%2042.669%2041.9479%2041.7387%2043.0101%2040.7716C44.3645%2039.5628%2045.2987%2038.5486%2045.8126%2037.7292C46.3264%2036.9097%2046.5834%2036.0637%2046.5834%2035.191Z'%20fill='%23092256'/%3e%3cpath%20d='M39.8126%2057.7675C40.4098%2058.3663%2041.1289%2058.6658%2041.9698%2058.6658C42.8108%2058.6658%2043.5307%2058.3672%2044.1295%2057.7699C44.7284%2057.1727%2045.0278%2056.4536%2045.0278%2055.6127C45.0278%2054.7717%2044.7292%2054.0518%2044.132%2053.453C43.5348%2052.8541%2042.8157%2052.5547%2041.9747%2052.5547C41.1338%2052.5547%2040.4139%2052.8533%2039.815%2053.4505C39.2162%2054.0477%2038.9167%2054.7668%2038.9167%2055.6078C38.9167%2056.4487%2039.2154%2057.1686%2039.8126%2057.7675Z'%20fill='%230357EE'/%3e%3c/g%3e%3c/svg%3e" alt="">
+               <h3 class="text-[24px] mb-[16px]  text-[#031335] font-[700]">Easy Help</h3>
+                <p class="text-[#3E588E] text-[20px]">Quick and accessible support whenever you need it</p>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    
+   
+    
+    
+
+    
+</body>
+</html>
+
+ 
+

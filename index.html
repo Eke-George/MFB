@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moniepoint</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="src/styles.css">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+    
+    <header class="sticky top-0 z-50">
+        <!-- Top Banner -->
+        <div class="bg-[#030B1D] w-full">
+            <div class="max-w-[800px] w-full mx-auto flex flex-col sm:flex-row justify-between items-center text-white py-2 sm:py-4 px-4 gap-2 sm:gap-4">
+                <p class="text-xs sm:text-sm text-center sm:text-left">This website uses cookies to enhance your experience. Learn more here:</p>
+                <div class="flex gap-[30px] text- sm:text-sm">
+                    <p class="font-bold cursor-pointer hover:text-blue-300 transition-colors">Privacy Policy</p>
+                    <p class="font-bold cursor-pointer hover:text-blue-300 transition-colors">Cookie Policy</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden max-lg:grid grid-cols-2 text-white text-center text-sm">
+            <div class="bg-[#092256] p-5">Business</div>
+            <div class="bg-[#031335] p-5 ">Personal</div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="bg-[#031335] w-full max-lg:hidden">
+            <div class="py-4 sm:py-6 px-4 sm:px-5 flex justify-between items-center max-w-[1400px] w-full mx-auto">
+                
+                
+                <!-- Left Section: Logo + Business/Personal Buttons -->
+                <div class="flex gap-4 sm:gap-5 items-center text-white">
+                    <div class="logo">
+                        <img class="w-24 sm:w-32" src="images/logo-mfb-white.png" alt="moniepoint logo">
+                    </div>
+                    
+                    <!-- Business/Personal Toggle - Hidden on mobile -->
+                    <div class="hidden md:flex gap-2">
+                        <button class="bg-[#35425D] rounded-3xl px-3 sm:px-4 font-medium py-2 text-sm transition-colors hover:bg-[#4a5a7a]">
+                            Business
+                        </button>
+                        <button class="rounded-3xl px-3 sm:px-4 font-medium py-2 text-sm hover:bg-[#35425D] transition-colors">
+                            Personal
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center ">
+                                  <!-- Desktop Navigation -->
+                <nav class="hidden lg:block pr-[60px]">
+                    <ul class="navlinks flex gap-6 xl:gap-8 text-white">
+                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Products</a>
+                            <i class="fas fa-angle-down text-xs"></i>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Company</a>
+                            <i class="fas fa-angle-down text-xs"></i>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">About</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Contact</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                            <a href="" class="text-sm">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Right Section -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <!-- Sign in Button -->
+                    <button class="whitespace-nowrap bg-[#C4E9FD] text-[#25406F] text-[15px] relative px-[12px] pr-[29px] py-[8px] rounded-[30px]">Sign in<i class="text-[#25406F] pl-[3px] translate-y-[53%] absolute bottom-[50%] fas fa-arrow-right"></i></button>
+
+                    <!-- Country Selector -->
+                    <div class="hidden sm:flex items-center gap-2 text-white cursor-pointer hover:text-blue-300 transition-colors">
+                        <img src="images/nig.svg" alt="" class="w-5 h-5">
+                        <i class="fas fa-angle-down text-xs"></i>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+                </div>
+  
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+         <div class="bg-[#031335] w-full lg:hidden ">
+            <div class="py-4 sm:py-6 px-4 sm:px-5 flex justify-between items-center max-w-7xl mx-auto">
+                
+                
+                
+                <div class="flex gap-4 sm:gap-5 items-center text-white">
+                    <div class="logo">
+                        <img class="w-24 sm:w-32" src="images/logo-mfb-white.png" alt="moniepoint logo">
+                    </div>
+                    
+                   
+                </div>
+
+                
+
+            
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="text-white border-gray-500 border-[0.5px] rounded-full w-[35px] h-[35px] relative">
+                        <i class="fas  absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="hero-section bg-[#031335]  text-white px-[17px] pb-[30px]
+    
+    relative after:content-[''] after:absolute after:-bottom-[60px] after:left-0 after:w-full after:h-[60px] after:bg-[#031335] after:rounded-[0_0_50%_50%/0_0_90%_90%] after:z-[1]
+    
+    ">
+    
+        <div class="max-w-[1400px] w-full mx-auto flex justify-between items-center py-[10px] max-sm:flex-col">
+
+           <div class="text-section flex flex-col w-[50%]  max-sm:w-full max-sm:items-center gap-[25px] max-sm:gap-[30px] max-lg:gap-[18px] items-start shrink-0">
+               <button class="bg-[#3E588E] px-[18px] max-lg:px-[12px] py-[12px] rounded-[35px] flex whitespace-nowrap items-center"><img class="w-[30px] max-lg:w-[20px] pr-[5px]" src="images/config.png" alt=""><span class="max-[1200px]:text-[10px]">Africa's fastest growing financial Institution 2023-2025</span></button>
+               <div class="max-sm:w-[75%] text-center">
+                    <h3 class=" text-[50px] max-lg:text-[35px] max-sm:text-[28px] font-bold text-[#FEFEFE] " >Simple solutions to
+                    <span class="text-[50px] max-lg:text-[35px] max-sm:text-[28px] font-bold text-[#C4E9FD] -translate-y-1.5" >Power your business</span></h3>
+               </div>
+               
+            
+            <p class="text-[20px] max-sm:w-[75%] max-sm:text-center max-lg:text-[16px] max-sm:text-[14px] text-[#C3C9D5]">Collect payments, access loans and manage operations with a business banking solution that meets all your needs.</p>
+           
+            <button class="bg-[#0F58DC] px-[25px] py-[15px] max-sm:text-[14px] max-sm:py-[10px] rounded-xl flex items-center gap-[10px]"><span>Open an Account</span><i class=" fas fa-arrow-right"></i></button>
+            <div>
+                <p class="text-[12px] max-sm:text-[10px]">we are licensed by <span><img class="w-[20px] inline-block" src="images/fd.png" alt=""></span> and insured by
+                <img class="w-[70px] inline-block" src="images/457367134_1015365493418137_1270712666882087132_n.png" alt=""></p>
+            </div>
+
+        </div>
+        <div class="img-section grow max-sm:hidden">
+            <img class="w-full bg" src="images/hero-sub.png" alt="">
+        </div>
+        
+    </div>
+    </div>
+    <div class="bg-[#F1F5FA] w-full ">
+        <div class="max-w-[1400px] py-[40px] mb-[40px] w-full mx-auto bg-white rounded-[25px] bottom-[30px] z-10 relative ">
+        <div class="flex justify-between items-center px-[50px] ">
+            <div class=" flex w-[50%] items-start gap-[50px] max-lg:flex-col max-lg:gap-[20px]">
+            <p class="text-[32px] text-[#092256] font-[700] max-lg:text-[20px]">
+                Businesses that Count On Us
+            </p>
+            <p class="text-[16px] text-[#3C5589] max-lg:text-[14px] max-lg:pb-[20px]">
+                  join <span class="text-[#0356EC] ">5 million</span> business owners on the moniepoint platform
+            </p>
+        </div>
+        <div class="max-lg:hidden">  
+            <p style="-webkit-text-stroke: 1px #2B71F1;" class=" text-transparent font-bold"><span class="text-[150px] relative left-[35px]">5</span><span class="text-[150px] relative left-[21px]">m</span ><span class="text-[150px] relative bottom-[8px]">+</span></p>
+            
+        </div>
+        </div>
+        <div class="carousel w-full overflow-x-auto  scrollbar-none flex">
+             <div class="slides flex gap-[20px] animate-scroll items-center pr-[20px]">
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] border shrink-0">
+                <img class="" src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border rounded-md">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink- border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px]  shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+           
+           
+           
+
+        </div>
+             <div class="slides flex gap-[10px] animate-scroll items-center">
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] border shrink-0">
+                <img class="" src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink- border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] max-lg:w-[130px] max-lg:h-[130px]  shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+           
+           
+           
+
+        </div>
+        </div>
+        
+       
+        
+    </div>
+    
+    <div class="w-full">
+            <h2 class="text-center text-[40px] w-full mx-auto max-w-[700px] font-[700] text-[#193162] max-lg:text-[25px] max-lg:max-w-[400px] pb-[50px]">All the tools you need to run your business with ease</h2>
+            <div class="max-lg:hidden w-full mx-auto max-w-[900px] bg-white my-[20px] py-[50px] flex justify-around text-[18px] mb-[px] rounded-[35px] sticky top-[150px] z-[9">
+                <button class="bg-[#C4E9FD] px-[10px] py-[8px] text-[#37547F] rounded-[20px]">Business Account</button>
+                <button class="text-[#8391AF]">Point of Sale Terminal</button>
+                <button class="text-[#8391AF]">Expense Card</button>
+                <button class="text-[#8391AF]">Working Capital loans</button>
+
+            </div>
+
+    
+    <div class="max-lg:flex max-lg:justify-between max-lg:items-center max-w-[1400px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] max-lg:flex-col-reverse grid grid-cols-2 items-start">
+    <!-- <div class="grid lg:grid-cols-2-rever grid-cols-1 items-start  max-w-[1440px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] "> -->
+        <div class="text max-w-[500px] max-lg:max-w-full max-lg:px-[20px] ml-[40px] max-lg:ml-0">
+            <span class=" bg-[#e5ebf8]  text-[#022C77] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px] max-lg:text-[12px]">Business Account</span>
+            <h3 class="text-[40px] font-[400] leading-[50px] max-lg:leading-tight max-lg:text-[25px]">A free bank account to power your business</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px] max-lg:text-[14px]">Open a free bank account in your business name, in minutes. Access round the clock support, with no hidden fees and complete control over your account.</p>
+            <div class="flex gap-[50px] items-center max-lg:gap-[35px]">
+                <button class="bg-[#0F5BE3] rounded-[10px] max-lg:py-[12px] px-6 py-[16px] max-lg:text-[14px] text-white">Open an account</button>
+                <a href="" class="text-[#2168E3] max-lg:text-[14px]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="images/tool1.png" alt="">
+        </div>
+    </div>
+    <div class="max-lg:flex max-lg:justify-between max-lg:items-center max-w-[1400px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] max-lg:flex-col-reverse grid grid-cols-2 items-start">
+        <div class="text max-w-[500px] max-lg:max-w-full max-lg:px-[20px] ml-[40px] max-lg:ml-0">
+            <span class=" bg-[#e5ebf8]  text-[#022C77]  inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Point of Sale Terminal</span>
+            <h3 class="text-[40px] font-[400] leading-[50px] max-lg:leading-tight max-lg:text-[25px]">POS machine wey no get wahala.</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px] max-lg:text-[14px]">Accept card and transfer payments seamlessly, with a reliable point-of-sale terminal. Enjoy instant settlement, easy dispute resolution, and instant payments every time.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] p-4 text-white max-lg:py-[12px] px-6 py-[16px] max-lg:text-[14px]">Open an account</button>
+                <a href="" class="text-[#2168E3] max-lg:text-[14px]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="images/tool2.png" alt="">
+        </div>
+    </div>
+    <div class="max-lg:flex max-lg:justify-between max-lg:items-center max-w-[1400px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] max-lg:flex-col-reverse grid grid-cols-2 items-start">
+        <div class="text max-w-[500px] max-lg:max-w-full max-lg:px-[20px] ml-[40px] max-lg:ml-0">
+            <span class=" bg-[#e5ebf8]  text-[#022C77] inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Expense Card</span>
+            <h3 class="text-[40px] font-[400] leading-[50px] max-lg:leading-tight max-lg:text-[25px]">A secure card for your business expenses</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px] max-lg:text-[14px]">Order an expense card to spend and manage your business finance effectively, and get it in 48hrs. Track your business expenses and set limits for different needs.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px] p-4 text-white max-lg:py-[12px] px-6 py-[16px] max-lg:text-[14px]">Get a Card</button>
+                <a href="" class="text-[#2168E3] max-lg:text-[14px]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="images/tool3.png" alt="">
+        </div>
+    </div>
+    <div class="max-lg:flex max-lg:justify-between max-lg:items-center max-w-[1400px] w-full mx-auto mb-[100px] px-[20px] gap-[20px] max-lg:flex-col-reverse grid grid-cols-2 items-start">
+        <div class="text lg:max-w-[500px] max-lg:max- w-full max-lg:px-[20px] ml-[40px] max-lg:ml-0">
+            <span class=" bg-[#e5ebf8]  text-[#022C77]  inline-block px-[20px] py-[5px] rounded-[30px] mb-[15px]">Working Capital Loans</span>
+            <h3 class="text-[40px] font-[400] leading-[50px] max-lg:leading-tight max-lg:text-[25px]">Flexible loans that help your business grow</h3>
+            <p class="my-[20px] text-[#3E588E] text-[18px] max-lg:text-[14px]">Access working capital loans to help your business grow. Easy request process with business-friendly interest rates and repayment tenures.</p>
+            <div class="flex gap-[50px] items-center">
+                <button class="bg-[#0F5BE3] rounded-[10px]  p-4 text-white max-lg:py-[12px] px-6 py-[16px] max-lg:text-[14px]">Open an account</button>
+                <a href="" class="text-[#2168E3] max-lg:text-[14px]">Learn more</a>
+            </div>
+
+        </div>
+        <div class=" overflow-hidden">
+            <img class="w-full h-full max-h-[600px]  scale-115 object-cover object-center"  src="images/tool4.png" alt="">
+        </div>
+    </div>
+
+
+    </div>
+    
+
+    </div>
+    <div class="testimonilas">
+        hello world
+    </div>
+    <div class="bg-[#F8FAFD] w-full pt-[50px]">
+        <div class="grid grid-cols-2 sm:grid-cols-3 max-w-[1400px] w-full mx-auto px-[20px] max-lg:flex max-lg:flex-col max-lg:gap-[10px]" >
+            <p class="text-[#092256] font-[700] text-[28px]  ">whats more?</p>
+            <p class="text-[#3E558E] font-[600] text-[24px] max-lg:text-[15px] max-w-[240px]">Explore more ways to take your business to the next level</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] max-w-[1400px] w-full mx-auto  py-[50px] px-[20px] pb-[150px]">
+            <div class="card p-[30px] border border-gray-200 bg-white rounded-[20px] ">
+                <img class="w-[84px] max-lg:w-[70px] mb-[40px] max-lg:my-[20px]" src="images/manage.svg" alt="">
+                <h3 class="text-[24px] max-lg:text-[19px] mb-[16px] text-[#031335] font-[700]">Manage Multiple Businesses</h3>
+                <p class="text-[#3E588E] text-[20px] max-lg:text-[17px]">Easily handle multiple businesses in one place</p>
+                
+            </div>
+            <div class="card p-[30px] bg-white  border border-gray-200 rounded-[20px] ">
+                <img class="w-[84px] max-lg:w-[70px] mb-[40px] max-lg:my-[20px]" src="images/performance.svg" alt="">
+               <h3 class="text-[24px] max-lg:text-[19px] mb-[16px] text-[#031335] font-[700]">Business Performance</h3>
+                <p class="text-[#3E588E] text-[20px] max-lg:text-[17px]">Keep your finger on the pulse of your business</p>
+                
+            </div>
+            <div class="card p-[30px] bg-white  border border-gray-200 rounded-[20px] ">
+                <img class="w-[84px] max-lg:w-[70px] mb-[40px] max-lg:my-[20px] " src="images/help.svg" alt="">
+               <h3 class="text-[24px] max-lg:text-[19px] mb-[16px]  text-[#031335] font-[700]">Easy Help</h3>
+                <p class="text-[#3E588E] text-[20px] max-lg:text-[17px]">Quick and accessible support whenever you need it</p>
+                
+            </div>
+            
+            
+        </div>
+        <div class="grid grid-cols-1  lg:grid-cols-2 gap-[30px] max-w-[1400px] w-full mx-auto  py-[50px] px-[20px] pb-[150px]">
+            <div class="card p-[10px]   ">
+                
+                <h3 class="text-[35px] mb-[16px] text-[#031335] font-[600] max-lg:text-[30px]">How to Get Started</h3>
+                <p class="text-[#3E588E] text-[23px] max-lg:text-[15px]">Your journey with Moniepoint starts here! Just follow these easy steps</p>
+                
+            </div>
+            <div class="card max-lg:hidden max-w-[250px] h-auto   border border-gray-200  ">
+                <img class="object-cover w-full h-full" src="images/ng-1.png" alt="">   
+                
+            </div>    
+        </div>
+        <div class="carousel w-full overflow-x-auto  scrollbar-none flex">
+             <div class="slides flex gap-[20px] animate-scroll items-center pr-[20px]">
+            <div class="card w-[200px] h-[200px] border shrink-0">
+                <img class="" src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border rounded-md">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+           
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink- border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            
+           
+           
+           
+
+        </div>
+             <div class="slides flex gap-[10px] animate-scroll items-center">
+            <div class="card w-[200px] h-[200px] border shrink-0">
+                <img class="" src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-1.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-2.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink- border">
+                <img src="images/biz-3.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-5.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-6.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px] shrink-0 border">
+                <img src="images/biz-7.png" alt="">
+            </div>
+            <div class="card w-[200px] h-[200px]  shrink-0 border">
+                <img src="images/biz-8.png" alt="">
+            </div>
+           
+           
+           
+
+        </div>
+        </div>
+        <div class="w-full flex gap-[20px] justify-center py-[50px]">
+            <div class="bg-[#092256] inline-flex gap-[10px] items-center w-[200px] h-[63px] rounded-[15px] justify-center">
+                <img src="images/apple.svg" alt="">
+                <div class="text-white flex flex-col">
+                    <p class="text-[12px] ">get it on</p>
+                    <p class="30px font-[700]">App Store</p>
+                </div>
+            </div>
+            <div class="bg-[#092256] inline-flex gap-[10px] items-center w-[180px] h-[63px] rounded-[15px] justify-center"><img src="images/playstore.svg" alt="">
+            <div class="text-white flex flex-col">
+                    <p class="text-[12px] ">get it on</p>
+                    <p class="30px font-[700]">Google Play</p>
+                </div></div>
+        </div> 
+        <div>
+            <div class="blog-text flex justify-between items-center w-full px-[20px] max-w-[1300px] mx-auto">
+                <div class="w-[50%]">
+                    <h2 class="text-[#092256] font-[500] text-[45px] max-lg:text-[24px]">Blogs & Articles</h2>
+                    <p class="text-[#3E588E] font-[400] text-[22px] leading-tight max-lg:text-[13px]">Discover the roadmap to financial success! Stay updated with the latest tips and trends on our blog</p>
+                </div>
+                <div class="">
+                    <button class="bg-[#0F58DC] text-white rounded-[15px] py-[15px] px-[24px]">Discover more stories</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] max-w-[1300px] w-full mx-auto  py-[50px] px-[20px] pb-[150px]">
+            <div class="card py-[20px] p-[10px]border border-gray-200 bg-white rounded-[20px] ">
+                <div class="w-full rounded-[12px]  overflow-hidden">
+                    <img class="w-full object-cover" src="images/sc1.png" alt="">
+
+                </div>
+                <div class="flex justify-between py-[20px]">
+                    <p class="text-[#0355E8] text-[16px] font-[500]">Business Life</p>
+                    <p class="text-[#8F9BAA] text-[14px] font-[500]">September 26, 2025</p>
+                </div>
+                <h3 class="text-[24px] mb-[16px] text-[#092152] leading-tight font-[600]">Needs vs Wants: The Smart Way to Manage Money and Save in Nigeria</h3>
+                <p class="text-gray-600 text-[16px]">by Chidinma Nwonye
+                
+            </div>
+            <div class="card py-[20px] p-[10px]border border-gray-200 bg-white rounded-[20px] ">
+                <div class="w-full rounded-[12px]  overflow-hidden">
+                    <img class="w-full object-cover" src="images/sc2.png" alt="">
+
+                </div>
+                <div class="flex justify-between py-[20px]">
+                    <p class="text-[#0355E8] text-[16px] font-[500]">Business Life</p>
+                    <p class="text-[#8F9BAA] text-[14px] font-[500]">September 22, 2025</p>
+                </div>
+                <h3 class="text-[24px] mb-[16px] text-[#092152] leading-tight font-[600]">Needs vs Wants: The Smart Way to Manage Money and Save in Nigeria</h3>
+                <p class="text-gray-600 text-[16px]">by Chidinma Nwonye
+                
+            </div>
+            <div class="card py-[20px] p-[10px]border border-gray-200 bg-white rounded-[20px] ">
+                <div class="w-full rounded-[12px] overflow-hidden">
+                    <img class="w-full object-cover" src="images/sc3.png" alt="">
+
+                </div>
+                <div class="flex justify-between py-[20px]">
+                    <p class="text-[#0355E8] text-[16px] font-[500]">Business Life</p>
+                    <p class="text-[#8F9BAA] text-[14px] font-[500]">September 22, 2025</p>
+                </div>
+                <h3 class="text-[24px] mb-[16px] text-[#092152] leading-tight font-[600]">Needs vs Wants: The Smart Way to Manage Money and Save in Nigeria</h3>
+                <p class="text-gray-600 text-[16px]">by Chidinma Nwonye
+                
+            </div>
+           
+         
+            
+            
+        </div>
+
+
+        </div>
+        <div class="w-full h-[47vh] bg-center  bg-[url('/images/ctaL.svg')] bg-[#0357EE] text-white  flex justify-center items-center flex-col gap-[30px] ]">
+            <p class="text-[42px] max-w-[700px] font-[600] text-center leading-[45px]">Enjoy a business solution designed to help you grow</p>
+            <button class="bg-[#F2E5BB] text-[18px] flex items-center gap-[10px] text-[#0E1C38] py-[17px] px-[20px] rounded-[15px]"><span>Open an Account </span><i class="fas fa-arrow-right"></i></button>
+
+        </div>
+
+
+    </div>
+    <footer class="bg-[#030B1D] text-white">
+        <div class="max-w-[1300px] w-full px-[20px] mx-auto py-[70px]">
+            <div class="py-[15px]">
+                <img class="sm:w-[128px] w-[96px]" src="images/logo-mfb-white.png" alt="">
+            </div>
+            <div class="">
+                <div class="flex justify-between gap-[20px] max-lg:flex-col">
+                    <div class="w-[350px] max-lg:w-full" >
+                        <p class="text-gray-500 text-[13px]">
+                        Moniepoint Microfinance Bank Limited is authorised and regulated by the Central Bank of Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+                    </p>
+                    <div class="w-full flex gap-[20px] justify-center py-[50px] max-lg:justify-start">
+            <div class="bg-[#020710] inline-flex gap-[10px] items-center w-[200px] h-[63px] rounded-[15px] justify-center">
+                <img src="images/apple.svg" alt="">
+                <div class="text-white flex flex-col">
+                    <p class="text-[12px] ">get it on</p>
+                    <p class="30px font-[700]">App Store</p>
+                </div>
+            </div>
+            <div class="bg-[#020710] inline-flex gap-[10px] items-center w-[180px] h-[63px] rounded-[15px] justify-center"><img src="images/playstore.svg" alt="">
+            <div class="text-white flex flex-col">
+                    <p class="text-[12px] ">get it on</p>
+                    <p class="30px font-[700]">Google Play</p>
+                </div></div>
+        </div>
+                    </div>
+                    <div class="flex justify-between gap-[40px]  max-sm:grid max-sm:grid-cols-2">
+                        <div class="forbusi flex flex-col text-gray-500  gap-[10px]">
+                            <span class="font-[400] text-white">For Business</span>
+                            <span>Business Account</span>
+                            <span>Point of Sale Terminal</span>
+                            <span>Loan</span>
+                            <span>Expense Card</span>
+                        </div>
+                        <div class="forpersonal flex flex-col text-gray-500 gap-[10px]">
+                            <span class="font-[400] text-white">For Personal</span>
+                            <span>Instant Debit Card</span>
+                            <span>Personal Account</span>
+                            <span>Payment</span>
+                            <span>Personal Banking</span>
+                        </div>
+                        <div class="company flex flex-col text-gray-500 gap-[10px]">
+                            <span class="font-[400] text-white">Company</span>
+                            <span>About Us</span>
+                            <span>Culture</span>
+                            <span>Join Our Team</span>
+                            <span>Press & Media</span>
+                            <span>Contact Us</span>
+                        </div>
+                        <div class="resources flex flex-col text-gray-500 gap-[10px]">
+                            <span class="font-[400] text-white">Resources</span>
+                            <span>Moniepoint Blog</span>
+                            <span>Help Center</span>
+                            <span>Learning Center</span>
+                            <span>Whistleblower Policy</span>
+                            <span>IMS Policy</span>
+                            <span>Report a Vulnerability</span>
+                            <span>Inform Economic Report</span>
+                            <span>Security Trust Center</span>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                <div class="flex justify-between items-end pb-[70px] max-lg:flex-col max-lg:w-full max-lg:items-start py-[20px] max-sm:pt-[60px]">
+                   <div class="text-gray-400 max-sm:text-[14px] max-lg:max-w-[300px]">
+                        <p>Plot 7A, Block 4,
+                        Admiralty, Lekki Phase 1, Lagos State.</p>
+                        <p>support@moniepoint.com</p>
+                        <p>+234 201 888 9990</p>
+                   </div>
+                   <div class="w-[55%] flex justify-between  max-lg:w-full max-lg:py-[20px] max-sm:pt-[40px]">
+                    <div>
+                        
+                        <p class="text-[15px] text-white">Connect with us</p>
+                        <div class="flex py-[10px] gap-[10px]">
+                            <img src="images/instagram.svg" alt="">
+                            <img src="images/twitter.svg" alt="">
+                            <img src="images/facebook.svg" alt="">
+                            <img src="images/instagram.svg" alt="">
+                            <img src="images/youtube.svg" alt="">
+                        </div>
+                   </div>
+                   <div class="flex items-center gap-[10px] py-[10px]">
+                        <img src="images/nig.svg" alt="">
+                        <span class="translate-x-[-5px]">Nigeria</span>
+                        <i class="fas fa-angle-down"></i>
+                   </div>
+
+                   </div>
+                   
+                </div>
+                <!-- <div class="border border-gray-200"></div> -->
+                <hr class=" border-gray-800">
+        </div>
+        <div class="flex justify-between items-center pt-[10px] text-[14px] pb-[50px] text-[#5E636C]">
+            <div>
+                Copyright © 2025, Moniepoint
+            </div>
+            <div class="flex gap-[100px]">
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+            </div>
+        </div>
+        <div class="text-[#5E636C] text-[14px] font-[500] leading-[25px] max-lg:text-[12px]">
+            © 2025. Moniepoint is a bank with its services provided by Moniepoint MFB Limited and duly licensed by the Central Bank of Nigeria. Unauthorised reproduction or redistribution of copyrighted materials on this website and Moniepoint's digital media pages is strictly prohibited. By clicking on some of the links above, you will leave Moniepoint's website and be directed to a third-party website. The privacy practices of those third parties may differ from those of Moniepoint. We recommend you review the privacy statements of those third-party websites, as Moniepoint is not responsible for those third parties' privacy or security practices. Additional disclosures can be found in the resources section of our website.
+        </div>
+        
+    </footer>
+    
+   
+    
+    
+
+    
+</body>
+</html>
+
+ 
+
