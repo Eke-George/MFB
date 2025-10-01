@@ -13,6 +13,7 @@
 </head>
 <body>
     
+    
     <header class="sticky top-0 z-50">
         <!-- Top Banner -->
         <div class="bg-[#030B1D] w-full">
@@ -54,21 +55,77 @@
                                   <!-- Desktop Navigation -->
                 <nav class="hidden lg:block pr-[60px]">
                     <ul class="navlinks flex gap-6 xl:gap-8 text-white">
-                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                        <li class="flex items-center gap-2 cursor-pointer transition-colors relative group">
                             <a href="" class="text-sm">Products</a>
                             <i class="fas fa-angle-down text-xs"></i>
+                            <div class="absolute opacity-0 group-hover:opacity-100 group-hover:visible invisible w-[750px] rounded-xl -translate-x-[50%] left-[50%]  bg-white top-[40px] duration-200 ease-out flex justify-between text-gray-900 p-[20px]">
+                                <div class="flex flex-col gap-[10px] w-[48%]">
+                                    <div  class="hover:bg-[#E7F6FE] rounded-md p-[10px]">
+                                        <p class="text-gray-900 font-[600] text-[22px]">Business</p>
+                                        <p class="text-[14px] text-gray-400">Business and personal banking accounts</p>
+                                    </div>
+                                    <div class="hover:bg-[#E7F6FE] rounded-md p-[10px]">
+                                        <p class="text-gray-900 font-[600] text-[22px]">Credit</p>
+                                        <p class="text-[14px] text-gray-400">Business and personal banking accounts</p>
+                                    </div>
+                                    <div class="hover:bg-[#E7F6FE] rounded-md p-[10px]">
+                                        <p class="text-gray-900 font-[600] text-[22px]">Payments</p>
+                                        <p class="text-[14px] text-gray-400">Accept payments from anywhere</p>
+                                    </div>
+                                    <div class="hover:bg-[#E7F6FE] rounded-md p-[10px]">
+                                        <p class="text-gray-900 font-[600] text-[22px]">Business Management</p>
+                                        <p class="text-[14px] text-gray-400">Business and personal banking accounts</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-[20px] pt-[10px]">
+                                    <div class="flex gap-[20px] items-center">
+                                        <img class="w-[30px]" src="images/busineacc.png" alt="">
+                                        <div>
+                                            <p class="text-gray-900 font-[600] text-[18px]">Business Account</p>
+                                            <p class="text-[14px] text-gray-400">Get a free bank account to power your business</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="flex items-center gap-[20px]">
+                                        <img class="w-[30px]" src="images/hash.png" alt="">
+                                        <div>
+                                            <p class="text-gray-900 font-[600] text-[18px]">USSD</p>
+                                        <p class="text-[14px] text-gray-400">Dial *5537# for easy online banking</p>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-2 cursor-pointer hover:text-blue-300 transition-colors">
+                        <li class="flex items-center gap-2 cursor-pointer ansition-colors group relative">
                             <a href="" class="text-sm">Company</a>
                             <i class="fas fa-angle-down text-xs"></i>
+                            <div class="absolute opacity-0 group-hover:opacity-100 group-hover:visible invisible w-[290px] rounded-xl -translate-x-[50%] left-[50%] flex flex-col gap-[20px] bg-white top-[40px] duration-200 ease-out overflow-clip p-[25px]">
+                                <div class="flex gap-[20px] items-center text-gray-900">
+                                    <img class="w-[40px]" src="images/culture.png" alt="">
+                                    <p class="text-gray-900 text-[17px] font-[700] hover:text-[#0357EE]">Culture</p>
+                                
+                                </div>
+                                <div class="flex gap-[20px] items-center text-gray-900">
+                                    <img class="w-[40px]" src="images/careers.png" alt="">
+                                   
+                                <p class="text-gray-900 text-[17px] hover:text-[#0357EE] font-[700]">Careers</p>
+                                
+                                </div>
+                                <div class="flex gap-[20px] items-center  text-gray-900">
+                                 <img class="w-[40px]" src="images/press.png" alt="">
+                                <p class="text-gray-900 hover:text-[#0357EE] text-[17px] font-[700]">Press</p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                        <li class="cursor-pointer hover:bg-[#35425D] px-[14px] py-[4px] rounded-[30px] transition-colors">
                             <a href="" class="text-sm">About</a>
                         </li>
-                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                        <li class="cursor-pointer hover:bg-[#35425D] px-[14px] py-[4px] rounded-[30px] transition-colors">
                             <a href="" class="text-sm">Contact</a>
                         </li>
-                        <li class="cursor-pointer hover:text-blue-300 transition-colors">
+                        <li class="cursor-pointer hover:bg-[#35425D] px-[14px] py-[4px] rounded-[30px] transition-colors">
                             <a href="" class="text-sm">Blog</a>
                         </li>
                     </ul>
@@ -275,7 +332,7 @@
     
     <div class="w-full">
             <h2 class="text-center text-[40px] w-full mx-auto max-w-[700px] font-[700] text-[#193162] max-lg:text-[25px] max-lg:max-w-[400px] pb-[50px]">All the tools you need to run your business with ease</h2>
-            <div class="max-lg:hidden w-full mx-auto max-w-[900px] bg-white my-[20px] py-[50px] flex justify-around text-[18px] mb-[px] rounded-[35px] sticky top-[150px] z-[9">
+            <div class="max-lg:hidden w-full mx-auto max-w-[900px] bg-white my-[20px] py-[35px] flex justify-around text-[18px]  rounded-[35px] sticky top-[150px] ">
                 <button class="bg-[#C4E9FD] px-[10px] py-[8px] text-[#37547F] rounded-[20px]">Business Account</button>
                 <button class="text-[#8391AF]">Point of Sale Terminal</button>
                 <button class="text-[#8391AF]">Expense Card</button>
@@ -351,8 +408,56 @@
     
 
     </div>
-    <div class="testimonilas">
-        hello world
+    <div class="testimonials max-w-[1400px] w-full mx-auto px-[20px] py-[50px]">
+        <div class=" max-lg:flex max-lg:justify-between max-lg:items-start">
+           <div class="flex justify-between max-lg:items-start max-lg:gap-[30px] items-center py-[20px] max-lg:flex-col max-lg:w-full">
+            <p class="w-[25%] max-lg:w-full max-lg:text-[25px] text-[40px] text-[#092256] font-[650] tracking-tighter">Don't just take our word for it. </p>
+            <div class="flex justify-between gap-[20px]">
+                <div class="rounded-full overflow-hidden">
+                    <img class="w-[60px] max-md:w-[40px] max-md:h-[40px] h-[60px] object-cover" src="images/sd1 (1).jpg" alt="">
+                </div>
+                <div class="rounded-full overflow-hidden">
+                    <img class="w-[60px] max-md:w-[40px] max-md:h-[40px] h-[60px] object-cover" src="images/sd1 (2).jpg" alt="">
+                </div>
+                <div class="rounded-full overflow-hidden">
+                    <img class="w-[60px] max-md:w-[40px] max-md:h-[40px] h-[60px] object-cover" src="images/sd1 (3).jpg" alt="">
+                </div>
+                <div class="rounded-full overflow-hidden">
+                    <img class="w-[60px] max-md:w-[40px] max-md:h-[40px] h-[60px] object-cover" src="images/sd1.jpg" alt="">
+                </div>
+            </div>
+        </div>  
+         <div class=" items-center gap-[20px] py-[20px] hidden max-lg:flex" >
+                    <button class="rounded-full hover:bg-[#ECEEF0] bg-[#F8FAFD] w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]"><i class="fas fa-arrow-left text-[#455C8D]"></i></button>
+                    <button class="rounded-full  hover:bg-[#ECEEF0] bg-[#F8FAFD] w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]"><i class="fas text-[#455C8D] fa-arrow-right"></i></button>
+                </div>
+
+        </div>
+       
+        <div class="flex justify-between items-center max-lg:flex-col-reverse max-lg:gap-[30px]">
+            <div class="w-[25%] max-lg:w-[95%]">
+                <p class="text-[18px] font-[400] tracking-tight max-lg:text-[14px]">I was robbed and found my shop open one fateful morning. I needed some money to cover up for the loss, and my business relationship manager mentioned the Moniepoint Loan to me. I needed it, and they gave me. Moniepoint has been a big help to my business. Without them, business will not be able to function. </p>
+                <hr class="my-[20px]">
+                <p class="text-[#092256] font-[500] text-[23px] max-lg:text-[17px]">Tobi Hamilton</p>
+                <p class="text-[#092256] text-[14px] max-lg:text-[13px]">Founder, the house</p>
+                <div class="flex items-center gap-[20px] py-[20px] max-lg:hidden" >
+                    <button class="rounded-full hover:bg-[#ECEEF0] bg-[#F8FAFD] w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]"><i class="fas fa-arrow-left text-[#455C8D]"></i></button>
+                    <button class="rounded-full  hover:bg-[#ECEEF0] bg-[#F8FAFD] w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]"><i class="fas text-[#455C8D] fa-arrow-right"></i></button>
+                </div>
+            
+
+            </div>
+            <div class="flex justify-between w-[65%] max-lg:w-[95%] rounded-[25px] aspect-video relative  overflow-clip">
+                
+                    <img class="w-full h-full  object-cover" src="images/sd1 (1).jpg" alt="">
+                    <div class="absolute rounded-full bg-white w-[70px] h-[70px] top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 z-[10] flex items-center justify-center">
+                        <i class="fas fa-play text-[#0357EE] text-[24px]"></i>
+
+                    </div>
+                
+            </div>
+        </div>
+        
     </div>
     <div class="bg-[#F8FAFD] w-full pt-[50px]">
         <div class="grid grid-cols-2 sm:grid-cols-3 max-w-[1400px] w-full mx-auto px-[20px] max-lg:flex max-lg:flex-col max-lg:gap-[10px]" >
@@ -393,88 +498,64 @@
                 
             </div>    
         </div>
-        <div class="carousel w-full overflow-x-auto  scrollbar-none flex">
-             <div class="slides flex gap-[20px] animate-scroll items-center pr-[20px]">
-            <div class="card w-[200px] h-[200px] border shrink-0">
-                <img class="" src="images/biz-1.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border rounded-md">
-                <img src="images/biz-2.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-3.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-5.png" alt="">
-            </div>
-           
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-1.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-2.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink- border">
-                <img src="images/biz-3.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-5.png" alt="">
-            </div>
-            
-           
-           
+       <div class="w-full">
+            <div class="flex shrink-0 px-[40%] overflow-x-auto scrollbar-none">
+                <div class="w-[450px]   shrink-0 flex flex-col gap-[30px]">
+                    <div class="w-full flex items-center  ">
+                        <div class="w-[70px] h-[70px] rounded-full flex items-center border-[#2D67CF] justify-center text-[#0356EC] text-[18px] font-bold border-[4px]">1</div>
+                        <div class="border-[2px] border-[#0356EC] h-[2px] w-[calc(100%-70px)]">
+
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[25px] tracking-tight font-[600] text-[#092256]">Fill in your details and verify your phone number</p>
+                        <p class=" text-[#3E588E]">Provide your email and phone number and verify your phone number with an OTP.</p>
+                    </div>
+                </div>
+                <div class="w-[450px]   shrink-0 flex flex-col gap-[30px]">
+                    <div class="w-full flex items-center  ">
+                        <div class="w-[70px] h-[70px] rounded-full flex items-center border-[#2D67CF] justify-center text-[#0356EC] text-[18px] font-bold border-[4px]">2</div>
+                        <div class="border-[2px] border-[#0356EC] h-[2px] w-[calc(100%-70px)]">
+
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[25px] tracking-tight font-[600] text-[#092256]">Get verified with your BVN and KYC details</p>
+                        <p class=" text-[#3E588E]">Select username & password. Provide your BVN and KYC details and start face & ID verification. You can then provide your business name and set up a PIN for managing your account.</p>
+                        
+                    </div>
+                </div>
+                <div class="w-[450px]   shrink-0 flex flex-col gap-[30px]">
+                    <div class="w-full flex items-center  ">
+                        <div class="w-[70px] h-[70px] rounded-full flex items-center border-[#2D67CF] justify-center text-[#0356EC] text-[18px] font-bold border-[4px]">3</div>
+                        <div class="border-[2px] border-[#0356EC] h-[2px] w-[calc(100%-70px)]">
+
+                        </div>
+                    </div>
+                    <div>
+                       
+                        <p class="text-[25px] tracking-tight font-[600] text-[#092256]">Fund your account to start making transfers.</p>
+                        <p class=" text-[#3E588E]">Top up to start making transfers.</p>
+                    </div>
+                </div>
+                <div class="w-[450px]   shrink-0 flex flex-col gap-[30px]">
+                    <div class="w-full flex items-center  ">
+                        <div class="w-[70px] h-[70px] rounded-full flex items-center border-[#2D67CF] justify-center text-[#0356EC] text-[18px] font-bold border-[4px]">4</div>
+                        <div class="border-[2px] border-[#0356EC] h-[2px] w-[calc(100%-70px)]">
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[25px] tracking-tight font-[600] text-[#092256]">Access your account dashboard and apply for an expense card.</p>
+                        <p class=" text-[#3E588E]">Login to your business dashboard and click on the Card menu to get an expense card.</p>
+                    </div>
+                </div>
+                
            
 
-        </div>
-             <div class="slides flex gap-[10px] animate-scroll items-center">
-            <div class="card w-[200px] h-[200px] border shrink-0">
-                <img class="" src="images/biz-1.png" alt="">
             </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-2.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-3.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-5.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-6.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-7.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-8.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-1.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-2.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink- border">
-                <img src="images/biz-3.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-5.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-6.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px] shrink-0 border">
-                <img src="images/biz-7.png" alt="">
-            </div>
-            <div class="card w-[200px] h-[200px]  shrink-0 border">
-                <img src="images/biz-8.png" alt="">
-            </div>
-           
-           
-           
 
-        </div>
-        </div>
+       </div>
         <div class="w-full flex gap-[20px] justify-center py-[50px]">
             <div class="bg-[#092256] inline-flex gap-[10px] items-center w-[200px] h-[63px] rounded-[15px] justify-center">
                 <img src="images/apple.svg" alt="">
